@@ -19,26 +19,21 @@ The project is structured into three key components:
 
 ### 1. Clone the Repository
 
-```
-
+```shell
 git clone https://github.com/keyuno/bitcoin-agent
-
 ```
+
 
 ### 2. Navigate to the Repository
 
-```
-
+```shell
 cd bitcoin-agent
-
 ```
 
 ### 3. Install Dependencies
 
-```
-
+```shell
 npm install
-
 ```
 
 ### 4. Model Selection
@@ -55,11 +50,9 @@ Be sure to review the licensing terms of the chosen model before proceeding.
 
 1. Start the NFT generation process:
 
-   ```
-   
-   npm start
-   
-   ```
+     ```shell
+     npm start
+     ```
 
 2. Note that an IPFS CID will be generated. You are responsible for hosting the file to make it accessible to others. This implementation does not include an IPFS node.
 
@@ -86,12 +79,9 @@ Be sure to review the licensing terms of the chosen model before proceeding.
 
 7. To initiate the auction as a seller:
 
-     ```
-     
+     ```shell
      npm run auction
-     
      ```
-
 
    **Note**: The current demonstration does not incorporate automated XCP spam prevention. If there is an XCP fee required to participate in the auction, bidders should destroy the specified amount of XCP from the bidding address. When destroying the XCP, they should include a text memo with the name of the auctioned asset.
 
@@ -101,25 +91,19 @@ Be sure to review the licensing terms of the chosen model before proceeding.
 
 2. The seller's next step is to generate a shared address based on their own address and the address of the highest bidder. Subsequently, the seller will transfer the asset to this shared address.
 
-   ```
-   
-   npm run generate
-   
-   ```
+     ```shell
+     npm run generate
+     ```
 
-   ```
-   
-   npm run send
-   
-   ```
+     ```shell
+     npm run send
+     ```
 
 3. Once confirmed, the seller will provide the bidder with details regarding the script employed in creating the lock script. This is accomplished by broadcasting a BTC transaction wherein the script is embedded. The bidder is required to monitor the seller's address. 
 
-    ```
-    
-   npm run script
-    
-   ```
+     ```shell
+     npm run script
+     ```
 
 4. The bidder can authenticate the script and utilize the hash of the preimage to formulate the lock script for the swap. The bidder can use `decode.js` to decode the script. 
 
@@ -127,19 +111,15 @@ Be sure to review the licensing terms of the chosen model before proceeding.
 
 6. In this demonstration, we utilize the `sweep` method for redeeming the asset, which necessitates an additional fee of 0.5 XCP.
 
-   ```
-   
-   npm run bob
-   
-   ```
+     ```shell
+     npm run bob
+     ```
 
 7. In the event that the deal does not proceed as planned, the seller retains the option to transfer the asset back to themselves:
 
-      ```
-   
-   npm run alice
-    
-      ```
+      ```shell
+     npm run alice
+     ```
 
 
  **Note**: It's important to note that there is no obligation for either party to complete the swap. Also note that in this limited demonstration we mainly focusing on seller tokens being claimed. For more comprehensive instructions on how to execute atomic swaps, please refer to the following [resource](https://github.com/keyuno/atomic-swap-xcp).
