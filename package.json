@@ -1,0 +1,29 @@
+{
+  "name": "bitcoin-agent",
+  "version": "1.0.0",
+  "description": "Bitcoin powered agent for NFT creation and auctions (testnet).",
+  "author": "keyuno",
+  "scripts": {
+    "start": "node src/index.js",
+    "auction": "node src/auction.js",
+    "generate": "node src/seller.js generate",
+    "send": "node src/send.js",
+    "script": "node src/script.js",
+    "bob": "node src/seller.js",
+    "alice": "node src/seller.js alice"
+
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@llama-node/core": "^0.1.6",
+    "@llama-node/llama-cpp": "^0.1.6",
+    "@llama-node/rwkv-cpp": "^0.1.6",
+    "axios": "^1.5.0",
+    "bip68": "^1.0.4",
+    "bitcoinjs-lib": "^6.1.3",
+    "ecpair": "^2.1.0",
+    "ipfs-only-hash": "^4.0.0",
+    "llama-node": "^0.1.6",
+    "tiny-secp256k1": "^2.2.3"
+  }
+}
