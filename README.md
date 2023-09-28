@@ -69,7 +69,7 @@ Be sure to review the licensing terms of the chosen model before proceeding.
 5. [Example](https://testnet.xchain.io/tx/34474) of an asset being put up for auction:  
 
 
-   - A: A601891726002205300, Expiration Block: 2503557
+   - A: A601891726002205300, Exp. Block: 2503557
 
 6. Bidders should broadcast the following message (including the `value` in BTC, which must be higher than the starting price):
   
