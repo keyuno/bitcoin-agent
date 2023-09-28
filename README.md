@@ -83,7 +83,7 @@ Be sure to review the licensing terms of the chosen model before proceeding.
      npm run auction
      ```
 
-   **Note**: The current demonstration does not incorporate automated XCP spam prevention. If there is an XCP fee required to participate in the auction, bidders should destroy the specified amount of XCP from the bidding address. When destroying the XCP, they should include a text memo with the name of the auctioned asset.
+**Note**: The current demonstration does not incorporate automated XCP spam prevention. If there is an XCP fee required to participate in the auction, bidders should destroy the specified amount of XCP from the bidding address. When destroying the XCP, they should include a text memo with the name of the auctioned asset.
 
 ### Perform Swap
 
