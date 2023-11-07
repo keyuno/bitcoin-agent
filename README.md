@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates a Bitcoin-powered agent for generating digital objects (NFTs) with the assistance of an intelligent agent and conducting auctions on Bitcoin's testnet utilizing Counterparty (XCP).
+This project demonstrates a Bitcoin-powered intelligent agent for generating digital objects (NFTs) and conducting auctions on Bitcoin's testnet utilizing Counterparty (XCP).
 
 Please note that this code is intended for demonstration purposes and assumes the use of Bitcoin's testnet. In a real-world scenario, use appropriate precautions and security measures to handle real Bitcoin transactions carefully.
 
